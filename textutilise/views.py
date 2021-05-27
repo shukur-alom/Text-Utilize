@@ -64,7 +64,7 @@ def charcount_(text):
 
 
 def index(request):
-    return render(request, "Home.html")
+    return render(request, "index.html")
 
 
 def analyze(request):
