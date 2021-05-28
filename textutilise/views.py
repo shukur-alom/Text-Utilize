@@ -114,6 +114,3 @@ def cont(request):
         c_2.to_json("con_us.json")
         c_1, c_2 = 0, 0
     return render(request, 'cont_us.html')
-
-
-if __name__ == "__main__":pass
