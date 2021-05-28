@@ -68,8 +68,8 @@ def index(request):
 
 
 def analyze(request):
-    text = request.GET.get("text_area", 'default')
-    type = request.GET.get("analyze_type", 'default')
+    text = request.POST.get("text_area", 'default')
+    type = request.POST.get("analyze_type", 'default')
 
     if type == "removepunc":
         var = {"input_text": text, "type": type,
@@ -98,11 +98,11 @@ def about(request): return render(request, 'about_us.html')
 
 
 def cont(request):
-    email_ = request.GET.get("email", 'default')
-    message_ = request.GET.get("message", 'default')
+    email_ = request.POST.get("email", 'default')
+    message_ = request.POST.get("message", 'default')
     if email_ != "default" and message_ != "default":
 
-        c_1 = pd.read_json('/home/shukur/Documents/Django/textutilise/con_us.json')
+        c_1 = pd.read_json('con_us.json')
 
         email = list(c_1['email'])
         email.append(str(email_))
@@ -111,7 +111,7 @@ def cont(request):
 
         c_2 = pd.DataFrame({'email': email,
                             'message': message})
-        c_2.to_json("/home/shukur/Documents/Django/textutilise/con_us.json")
+        c_2.to_json("con_us.json")
         c_1, c_2 = 0, 0
     return render(request, 'cont_us.html')
 

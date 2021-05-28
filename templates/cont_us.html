@@ -46,7 +46,8 @@
     <br><br>
     <div class="container">
 
-        <form action="{% url 'Con_us' %}" method="GET"> 
+        <form action="{% url 'Con_us' %}" method="POST"> 
+            {% csrf_token %}
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Email address</label>
                 <input type="email" class="form-control" name="email" id="exampleFormControlInput1"
