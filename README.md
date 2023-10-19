@@ -5,7 +5,6 @@ Welcome to your first Django project! This web application allows you to manipul
 ## Features
 
 - **Text Manipulation**: Easily remove unnecessary marks, omit extra lines, and clean up extra spaces in your text.
-- **Messaging System**: Communicate with other users through the built-in messaging feature.
 
 ## Getting Started
 
@@ -16,3 +15,15 @@ To run this Django project on your local machine, follow these steps:
    ```
    git clone https://github.com/shukur-alom/Text-Utilize.git)https://github.com/shukur-alom/Text-Utilize.git
    ```
+
+2. Install Dependencies:
+
+```
+pip install -r requirements.txt
+```
+
+3. python manage.py runserver
+
+```
+python manage.py runserver
+```
