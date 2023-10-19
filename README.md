@@ -26,3 +26,10 @@ pip install -r requirements.txt
 ```
 python manage.py runserver
 ```
+
+4. Access the Application:
+
+Open a web browser and go to http://localhost:8000/ to access the project.
+
+## Usage
+Navigate to the text manipulation feature to clean up your text.
