@@ -13,6 +13,6 @@ To run this Django project on your local machine, follow these steps:
 
 1. **Clone the Repository**:
 
-   ```bash
-   git clone https://github.com/your-username/your-django-project.git
-   cd your-django-project
+   ```
+   git clone https://github.com/shukur-alom/Text-Utilize.git)https://github.com/shukur-alom/Text-Utilize.git
+   ```
